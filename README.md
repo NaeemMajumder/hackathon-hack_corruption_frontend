@@ -5,7 +5,7 @@
 
 <!-- ![Stop Corruption](https://media.istockphoto.com/id/486239989/photo/educational-and-creative-composition-with-the-message-stop-corruption.jpg?s=612x612&w=0&k=20&c=azeOvbGua9G3ORDs_ujBTeGwpyHNIiHs2X1BXCev48o=) -->
 
-<img src="/images/hack-corruption.jpg" alt="Stop Corruption" width="600">
+<img src="./public/images/hack-corruption.jpg" alt="Stop Corruption" width="600">
 
 
 ## 🌐 Live Links
