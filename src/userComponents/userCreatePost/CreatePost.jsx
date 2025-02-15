@@ -65,7 +65,9 @@ const CreatePost = () => {
 
     try {
       const res = await fetch(
-        `https://api.imgbb.com/1/upload?key=${import.meta.env.VITE_IMAGE_HOSTING_KEY}`,
+        `https://api.imgbb.com/1/upload?key=${
+          import.meta.env.VITE_IMAGE_HOSTING_KEY
+        }`,
         {
           method: "POST",
           body: formData,
@@ -87,7 +89,7 @@ const CreatePost = () => {
   const handleNext = () => {
     if (step === 3) {
       console.log("Uploaded Image URL:", formData.imageUrl);
-      
+
       let imgUrl = formData.imageUrl;
 
       // ai generate description add
@@ -252,6 +254,15 @@ const CreatePost = () => {
                   <option value="">Select Category</option>
                   <option value="Bribery">Bribery</option>
                   <option value="Fraud">Fraud</option>
+                  <option value="Embezzlement">Embezzlement</option>
+                  <option value="Money Laundering">Money Laundering</option>
+                  <option value="Tax Evasion">Tax Evasion</option>
+                  <option value="Nepotism">Nepotism</option>
+                  <option value="Misuse of Power">Misuse of Power</option>
+                  <option value="Extortion">Extortion</option>
+                  <option value="Kickback">Kickback</option>
+                  <option value="Collusion">Collusion</option>
+                  <option value="Others">Others</option>
                 </select>
                 <label className="block font-medium mb-2 text-white">
                   Title

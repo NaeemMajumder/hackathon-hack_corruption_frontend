@@ -50,7 +50,7 @@ const Register = () => {
   };
 
     // const actionCodeSettings = {
-    //   url: "http://localhost:3000/verify-email", // Change this to your actual verification page
+    //   url: "https://project-hack-backend.vercel.app/verify-email", // Change this to your actual verification page
     //   handleCodeInApp: true,
     // };
 

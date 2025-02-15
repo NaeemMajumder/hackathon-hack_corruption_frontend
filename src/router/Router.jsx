@@ -44,7 +44,7 @@ export const Router = createBrowserRouter([
       {
         path: "/posts/:id",
         element: <PrivateRoute><DetailsPost /></PrivateRoute>,
-        loader: ({params})=>fetch(`http://localhost:3000/posts/${params.id}`)
+        loader: ({params})=>fetch(`https://project-hack-backend.vercel.app/posts/${params.id}`)
       },
       {
         path: "achievements",
@@ -73,7 +73,7 @@ export const Router = createBrowserRouter([
       {
         path: "/achievements/:id",
         element: <PrivateRoute><DetailsSuccessReport/></PrivateRoute>,
-        loader: ({params})=>fetch(`http://localhost:3000/successReport/${params.id}`)
+        loader: ({params})=>fetch(`https://project-hack-backend.vercel.app/successReport/${params.id}`)
       },
 
       // this is all the private routes
@@ -104,7 +104,7 @@ export const Router = createBrowserRouter([
       {
         path:'/admin/allUsers/:id',
         element: <PrivateRoute><UserProfile/></PrivateRoute>,
-        loader: ({params})=>fetch(`http://localhost:3000/admin/allUsers/${params.id}`)
+        loader: ({params})=>fetch(`https://project-hack-backend.vercel.app/admin/allUsers/${params.id}`)
       },
       {
         path:'/admin/allPosts',
